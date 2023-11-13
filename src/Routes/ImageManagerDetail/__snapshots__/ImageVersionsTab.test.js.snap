@@ -8,7 +8,6 @@ exports[`ImageVersionsTab renders correctly 1`] = `
   data-ouia-safe="true"
   data-testid="toolbar-header-testid"
   id="toolbar-header"
-  style="padding: 0px;"
 >
   <div
     class="pf-c-toolbar__content"
@@ -222,26 +221,7 @@ exports[`ImageVersionsTab renders correctly 1`] = `
     </div>
     <div
       class="pf-c-toolbar__expandable-content"
-      id="toolbar-header-expandable-content-3"
-    >
-      <div
-        class="pf-c-toolbar__group"
-      />
-    </div>
-  </div>
-  <div
-    class="pf-c-toolbar__content"
-  >
-    <div
-      class="pf-c-toolbar__content-section"
-    >
-      <div
-        class="pf-c-toolbar__item pf-m-chip-group pf-m-spacer-none"
-      />
-    </div>
-    <div
-      class="pf-c-toolbar__expandable-content"
-      id="toolbar-header-expandable-content-4"
+      id="toolbar-header-expandable-content-2"
     >
       <div
         class="pf-c-toolbar__group"

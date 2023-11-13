@@ -44,11 +44,7 @@ const ToolbarHeader = ({
   kebabItems,
 }) => {
   return (
-    <Toolbar
-      style={{ padding: '0' }}
-      id="toolbar-header"
-      data-testid="toolbar-header-testid"
-    >
+    <Toolbar id="toolbar-header" data-testid="toolbar-header-testid">
       <ToolbarContent>
         <FilterControls
           filters={filters}
@@ -88,17 +84,19 @@ const ToolbarHeader = ({
           ) : null}
         </ToolbarItem>
       </ToolbarContent>
-      <ToolbarContent>
-        <ToolbarItem variant="chip-group" spacer={{ default: 'spacerNone' }}>
-          <FilterChip
-            filterValues={filterValues}
-            setFilterValues={setFilterValues}
-            chipsArray={chipsArray}
-            setChipsArray={setChipsArray}
-            setPage={setPage}
-          />
-        </ToolbarItem>
-      </ToolbarContent>
+      {chipsArray.length > 0 && (
+        <ToolbarContent>
+          <ToolbarItem variant="chip-group" spacer={{ default: 'spacerNone' }}>
+            <FilterChip
+              filterValues={filterValues}
+              setFilterValues={setFilterValues}
+              chipsArray={chipsArray}
+              setChipsArray={setChipsArray}
+              setPage={setPage}
+            />
+          </ToolbarItem>
+        </ToolbarContent>
+      )}
     </Toolbar>
   );
 };
